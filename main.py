@@ -24,7 +24,7 @@ def draw():
             if -20 < y1 < 20 and not stop_draw:
                 pts.append(canvas.create_line(i + c_half, -(y1 * step) + c_half, 
                 i + 1 + c_half, -(y2 * step) + c_half, fill='red', width=3))
-                win.after(10, canvas.update())   
+                win.after(1, canvas.update())   
         except Exception:  
              pass
 
